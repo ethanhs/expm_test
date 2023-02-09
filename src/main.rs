@@ -6,6 +6,8 @@ use num_complex::{Complex64 as c64, ComplexFloat};
 use rand::*;
 use std::process::Command;
 
+extern crate blas_src;
+
 fn random_sparse_matrix() {
     let mut rng = rand::thread_rng();
     let num_samples = 100;

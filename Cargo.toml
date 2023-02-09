@@ -7,8 +7,10 @@ edition = "2021"
 
 [dependencies]
 ndarray = {version = "*", features = ["blas"]}
+blas-src = { version = "0.8", features = ["openblas"] }
+openblas-src = { version = "0.10", features = ["cblas", "system"] }
 # blas-src = {version = "*", features = ["intel-mkl"]}
-blas-src = {version = "*", features = ["accelerate"]}
 rand = "*"
 num-complex = "*"
+ndarray-linalg = { path = "../ndarray-linalg/ndarray-linalg" }
 
